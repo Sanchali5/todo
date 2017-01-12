@@ -1,0 +1,36 @@
+<div class="container">
+
+
+
+	<div class="row" >
+	    <div class="col-sm-3"></div>
+
+		<div class="col-sm-6">
+		    <div class="panel panel-info">
+      			<div class="panel-heading">
+			         <h3>To-do list</h3>
+			    </div>
+			</div>
+			
+		</div>
+	</div>	
+
+<div class="row" >
+	    <div class="col-sm-3"></div>
+
+		 	<div class="col-sm-6">
+	 			<div class="panel panel-info">
+                
+			         <h5>Title:<input ng-model="item.title"></h5>
+                     <h5>Description:<input ng-model="item.description"></h5>
+			         <button type="button" class="btn btn-info pull-right" ng-click="addItem()">Create</button>
+			         <button type="button" class="btn btn-info float-left" ng-click="viewItem()">View</button>
+			             <br/>
+			             <br/>
+			             <p>{{errortext}}</p>
+				</div>
+			</div>
+		</div>	
+
+</div>
+</div>

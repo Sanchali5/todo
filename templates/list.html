@@ -1,0 +1,39 @@
+<div class="container">
+
+
+
+	<div class="row" >
+	    <div class="col-sm-3"></div>
+
+		<div class="col-sm-6">
+		    <div class="panel panel-info">
+      			<div class="panel-heading">
+			         <h3>To-do list</h3>
+			    </div>
+			</div>
+			
+		</div>	
+	</div>	
+
+	<button type="button" class="btn btn-info float-left" ng-click="createItem()">Create</button>
+     <div class="row" ng-repeat="item in list">
+	     <div class="col-sm-3"></div>
+ 
+		 	 <div class="col-sm-6">
+	 			<div class="panel panel-info">
+                     
+                              
+                 
+
+			         <h5>Title: {{item.title}} </h5>
+                     <h5>Description: {{item.description}} </h5>
+			         <button type="button" class="btn btn-info pull-right" ng-click="removeItem($index)">Done</button>
+			             <br/>
+			             <br/>
+			             
+				</div>
+			</div>
+		</div>	
+
+    </div>
+</div> 
